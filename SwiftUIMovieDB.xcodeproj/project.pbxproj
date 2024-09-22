@@ -9,16 +9,23 @@
 /* Begin PBXBuildFile section */
 		C73FF8312C9F97B500140E38 /* SwiftUIMovieDBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FF8302C9F97B500140E38 /* SwiftUIMovieDBApp.swift */; };
 		C73FF8332C9F97B500140E38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FF8322C9F97B500140E38 /* ContentView.swift */; };
-		C73FF8352C9F97B600140E38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73FF8342C9F97B600140E38 /* Assets.xcassets */; };
 		C73FF8382C9F97B600140E38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73FF8372C9F97B600140E38 /* Preview Assets.xcassets */; };
+		C73FF8442C9F9EAA00140E38 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FF8432C9F9EAA00140E38 /* ColorTheme.swift */; };
+		C73FF8462C9F9EC600140E38 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FF8452C9F9EC600140E38 /* TextStyle.swift */; };
+		C73FF84A2C9FA03B00140E38 /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C73FF8492C9FA03B00140E38 /* Montserrat.ttf */; };
+		C73FF84D2C9FA27800140E38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73FF84C2C9FA27800140E38 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C73FF82D2C9F97B500140E38 /* SwiftUIMovieDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMovieDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73FF8302C9F97B500140E38 /* SwiftUIMovieDBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMovieDBApp.swift; sourceTree = "<group>"; };
 		C73FF8322C9F97B500140E38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C73FF8342C9F97B600140E38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C73FF8372C9F97B600140E38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C73FF8432C9F9EAA00140E38 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		C73FF8452C9F9EC600140E38 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
+		C73FF8492C9FA03B00140E38 /* Montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Montserrat.ttf; sourceTree = "<group>"; };
+		C73FF84B2C9FA0E000140E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C73FF84C2C9FA27800140E38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +58,12 @@
 		C73FF82F2C9F97B500140E38 /* SwiftUIMovieDB */ = {
 			isa = PBXGroup;
 			children = (
+				C73FF8482C9F9FD200140E38 /* Fonts */,
+				C73FF8402C9F9DAF00140E38 /* Theming */,
 				C73FF8302C9F97B500140E38 /* SwiftUIMovieDBApp.swift */,
 				C73FF8322C9F97B500140E38 /* ContentView.swift */,
-				C73FF8342C9F97B600140E38 /* Assets.xcassets */,
+				C73FF84C2C9FA27800140E38 /* Assets.xcassets */,
+				C73FF84B2C9FA0E000140E38 /* Info.plist */,
 				C73FF8362C9F97B600140E38 /* Preview Content */,
 			);
 			path = SwiftUIMovieDB;
@@ -65,6 +75,23 @@
 				C73FF8372C9F97B600140E38 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C73FF8402C9F9DAF00140E38 /* Theming */ = {
+			isa = PBXGroup;
+			children = (
+				C73FF8432C9F9EAA00140E38 /* ColorTheme.swift */,
+				C73FF8452C9F9EC600140E38 /* TextStyle.swift */,
+			);
+			path = Theming;
+			sourceTree = "<group>";
+		};
+		C73FF8482C9F9FD200140E38 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C73FF8492C9FA03B00140E38 /* Montserrat.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C73FF8382C9F97B600140E38 /* Preview Assets.xcassets in Resources */,
-				C73FF8352C9F97B600140E38 /* Assets.xcassets in Resources */,
+				C73FF84D2C9FA27800140E38 /* Assets.xcassets in Resources */,
+				C73FF84A2C9FA03B00140E38 /* Montserrat.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73FF8462C9F9EC600140E38 /* TextStyle.swift in Sources */,
+				C73FF8442C9F9EAA00140E38 /* ColorTheme.swift in Sources */,
 				C73FF8332C9F97B500140E38 /* ContentView.swift in Sources */,
 				C73FF8312C9F97B500140E38 /* SwiftUIMovieDBApp.swift in Sources */,
 			);
@@ -274,6 +304,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIMovieDB/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIMovieDB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +333,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIMovieDB/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIMovieDB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
