@@ -31,6 +31,20 @@
 		C7BE9A102CA668B400584061 /* Popular_Movies.json in Resources */ = {isa = PBXBuildFile; fileRef = C7BE9A0F2CA668B400584061 /* Popular_Movies.json */; };
 		C7BE9A122CA668BC00584061 /* Movie_Detail.json in Resources */ = {isa = PBXBuildFile; fileRef = C7BE9A112CA668BC00584061 /* Movie_Detail.json */; };
 		C7BE9A142CA66A9E00584061 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BE9A132CA66A9E00584061 /* MockData.swift */; };
+		C7CB0E492CC34A3100CD24A7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CB0E482CC34A3100CD24A7 /* LoginView.swift */; };
+		C7CB0E4B2CC34A8D00CD24A7 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CB0E4A2CC34A8D00CD24A7 /* AuthViewModel.swift */; };
+		C7CB0E4D2CC34E1000CD24A7 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CB0E4C2CC34E1000CD24A7 /* AuthService.swift */; };
+		C7CB0E4F2CC34E4100CD24A7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CB0E4E2CC34E4100CD24A7 /* User.swift */; };
+		C7CB0E512CC34EA800CD24A7 /* AuthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CB0E502CC34EA800CD24A7 /* AuthModels.swift */; };
+		C7CB0E532CC34F0C00CD24A7 /* AuthResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CB0E522CC34F0C00CD24A7 /* AuthResources.swift */; };
+		C7CB0E562CC34FED00CD24A7 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CB0E552CC34FED00CD24A7 /* KeychainManager.swift */; };
+		C7CB0E592CC3503100CD24A7 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C7CB0E582CC3503100CD24A7 /* KeychainSwift */; };
+		C7CB0E5C2CC350C200CD24A7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CB0E5B2CC350C200CD24A7 /* ProfileView.swift */; };
+		C7CB0E5E2CC351C300CD24A7 /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CB0E5D2CC351C300CD24A7 /* MockAuthService.swift */; };
+		C7CB0E602CC351EC00CD24A7 /* MockKeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CB0E5F2CC351EC00CD24A7 /* MockKeychainManager.swift */; };
+		C7CB0E622CC3529700CD24A7 /* Account_Details.json in Resources */ = {isa = PBXBuildFile; fileRef = C7CB0E612CC3529700CD24A7 /* Account_Details.json */; };
+		C7CB0E642CC353DD00CD24A7 /* AccountDetailsResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CB0E632CC353DD00CD24A7 /* AccountDetailsResource.swift */; };
+		C7CBC1432CC3708C00DB9B24 /* AuthServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CBC1422CC3708C00DB9B24 /* AuthServiceProtocol.swift */; };
 		C7CD7C0F2CC31A6B00AD52D7 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CD7C0E2CC31A6B00AD52D7 /* env.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +75,19 @@
 		C7BE9A0F2CA668B400584061 /* Popular_Movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Popular_Movies.json; sourceTree = "<group>"; };
 		C7BE9A112CA668BC00584061 /* Movie_Detail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Movie_Detail.json; sourceTree = "<group>"; };
 		C7BE9A132CA66A9E00584061 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		C7CB0E482CC34A3100CD24A7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C7CB0E4A2CC34A8D00CD24A7 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		C7CB0E4C2CC34E1000CD24A7 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C7CB0E4E2CC34E4100CD24A7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C7CB0E502CC34EA800CD24A7 /* AuthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModels.swift; sourceTree = "<group>"; };
+		C7CB0E522CC34F0C00CD24A7 /* AuthResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResources.swift; sourceTree = "<group>"; };
+		C7CB0E552CC34FED00CD24A7 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		C7CB0E5B2CC350C200CD24A7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C7CB0E5D2CC351C300CD24A7 /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
+		C7CB0E5F2CC351EC00CD24A7 /* MockKeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockKeychainManager.swift; sourceTree = "<group>"; };
+		C7CB0E612CC3529700CD24A7 /* Account_Details.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Account_Details.json; sourceTree = "<group>"; };
+		C7CB0E632CC353DD00CD24A7 /* AccountDetailsResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsResource.swift; sourceTree = "<group>"; };
+		C7CBC1422CC3708C00DB9B24 /* AuthServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceProtocol.swift; sourceTree = "<group>"; };
 		C7CD7C0E2CC31A6B00AD52D7 /* env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7CB0E592CC3503100CD24A7 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +142,7 @@
 			children = (
 				C72766F52CA7AB1700A9D874 /* Helpers */,
 				C72766F62CA7B6DD00A9D874 /* Mocks */,
+				C7CB0E542CC34FC100CD24A7 /* Storage */,
 				C73FF8402C9F9DAF00140E38 /* Theme */,
 				C716F3B52CA142F300B0767D /* Utilities */,
 			);
@@ -123,9 +152,9 @@
 		C72766F52CA7AB1700A9D874 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C7CD7C0E2CC31A6B00AD52D7 /* env.swift */,
 				C716F3B92CA144CF00B0767D /* Errors.swift */,
 				C7A974FF2CC2EEC3004D7F7F /* APIConstants.swift */,
-				C7CD7C0E2CC31A6B00AD52D7 /* env.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -134,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				C72766F72CA7B81300A9D874 /* Data */,
+				C7CB0E5D2CC351C300CD24A7 /* MockAuthService.swift */,
+				C7CB0E5F2CC351EC00CD24A7 /* MockKeychainManager.swift */,
 				C72766F82CA7CF7500A9D874 /* MockMoviesDataService.swift */,
 			);
 			path = Mocks;
@@ -145,6 +176,7 @@
 				C7BE9A132CA66A9E00584061 /* MockData.swift */,
 				C7BE9A112CA668BC00584061 /* Movie_Detail.json */,
 				C7BE9A0F2CA668B400584061 /* Popular_Movies.json */,
+				C7CB0E612CC3529700CD24A7 /* Account_Details.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -209,7 +241,9 @@
 		C73FF84E2C9FC3EA00140E38 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				C7CB0E432CC3476200CD24A7 /* Auth */,
 				C73FF84F2C9FC52E00140E38 /* Home */,
+				C7CB0E5A2CC3509100CD24A7 /* Profile */,
 				C716F3C22CA1476500B0767D /* Root */,
 			);
 			path = Features;
@@ -261,6 +295,69 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		C7CB0E432CC3476200CD24A7 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C7CB0E442CC349DC00CD24A7 /* Model */,
+				C7CB0E472CC34A0200CD24A7 /* View */,
+				C7CB0E462CC349F300CD24A7 /* ViewModel */,
+				C7CB0E452CC349E800CD24A7 /* Service */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C7CB0E442CC349DC00CD24A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7CB0E4E2CC34E4100CD24A7 /* User.swift */,
+				C7CB0E502CC34EA800CD24A7 /* AuthModels.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7CB0E452CC349E800CD24A7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C7CB0E4C2CC34E1000CD24A7 /* AuthService.swift */,
+				C7CBC1422CC3708C00DB9B24 /* AuthServiceProtocol.swift */,
+				C7CB0E522CC34F0C00CD24A7 /* AuthResources.swift */,
+				C7CB0E632CC353DD00CD24A7 /* AccountDetailsResource.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C7CB0E462CC349F300CD24A7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C7CB0E4A2CC34A8D00CD24A7 /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C7CB0E472CC34A0200CD24A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7CB0E482CC34A3100CD24A7 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7CB0E542CC34FC100CD24A7 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				C7CB0E552CC34FED00CD24A7 /* KeychainManager.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		C7CB0E5A2CC3509100CD24A7 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C7CB0E5B2CC350C200CD24A7 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -277,6 +374,9 @@
 			dependencies = (
 			);
 			name = SwiftUIMovieDB;
+			packageProductDependencies = (
+				C7CB0E582CC3503100CD24A7 /* KeychainSwift */,
+			);
 			productName = SwiftUIMovieDB;
 			productReference = C73FF82D2C9F97B500140E38 /* SwiftUIMovieDB.app */;
 			productType = "com.apple.product-type.application";
@@ -305,6 +405,9 @@
 				Base,
 			);
 			mainGroup = C73FF8242C9F97B500140E38;
+			packageReferences = (
+				C7CB0E572CC3503100CD24A7 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = C73FF82E2C9F97B500140E38 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -324,6 +427,7 @@
 				C73FF8382C9F97B600140E38 /* Preview Assets.xcassets in Resources */,
 				C73FF84D2C9FA27800140E38 /* Assets.xcassets in Resources */,
 				C73FF84A2C9FA03B00140E38 /* Montserrat.ttf in Resources */,
+				C7CB0E622CC3529700CD24A7 /* Account_Details.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,22 +439,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				C73FF8592C9FCD2000140E38 /* Movie.swift in Sources */,
+				C7CB0E642CC353DD00CD24A7 /* AccountDetailsResource.swift in Sources */,
+				C7CB0E4D2CC34E1000CD24A7 /* AuthService.swift in Sources */,
 				C73FF8462C9F9EC600140E38 /* TextStyle.swift in Sources */,
+				C7CB0E532CC34F0C00CD24A7 /* AuthResources.swift in Sources */,
 				C77781A92CA6A37B00C80D07 /* MoviesViewModel.swift in Sources */,
+				C7CB0E512CC34EA800CD24A7 /* AuthModels.swift in Sources */,
 				C73FF8442C9F9EAA00140E38 /* ColorTheme.swift in Sources */,
+				C7CB0E602CC351EC00CD24A7 /* MockKeychainManager.swift in Sources */,
+				C7CBC1432CC3708C00DB9B24 /* AuthServiceProtocol.swift in Sources */,
 				C73FF8562C9FCC1100140E38 /* PreviewData.swift in Sources */,
 				C7A975002CC2EEC3004D7F7F /* APIConstants.swift in Sources */,
 				C73FF8332C9F97B500140E38 /* ContentView.swift in Sources */,
 				C73FF85E2C9FDD4A00140E38 /* MoviesDataService.swift in Sources */,
 				C73FF8522C9FC56E00140E38 /* HomeView.swift in Sources */,
+				C7CB0E5C2CC350C200CD24A7 /* ProfileView.swift in Sources */,
 				C716F3B82CA143FA00B0767D /* HTTPMethod.swift in Sources */,
+				C7CB0E562CC34FED00CD24A7 /* KeychainManager.swift in Sources */,
 				C716F3BE2CA1456900B0767D /* HTTPResource.swift in Sources */,
 				C716F3C52CA1484900B0767D /* WrapperResults.swift in Sources */,
 				C716F3C72CA148ED00B0767D /* MoviesResource.swift in Sources */,
 				C7CD7C0F2CC31A6B00AD52D7 /* env.swift in Sources */,
 				C77781A02CA6919000C80D07 /* HTTPNetworking.swift in Sources */,
+				C7CB0E492CC34A3100CD24A7 /* LoginView.swift in Sources */,
 				C716F3BA2CA144CF00B0767D /* Errors.swift in Sources */,
 				C72766F92CA7CF7500A9D874 /* MockMoviesDataService.swift in Sources */,
+				C7CB0E5E2CC351C300CD24A7 /* MockAuthService.swift in Sources */,
+				C7CB0E4B2CC34A8D00CD24A7 /* AuthViewModel.swift in Sources */,
+				C7CB0E4F2CC34E4100CD24A7 /* User.swift in Sources */,
 				C7BE9A142CA66A9E00584061 /* MockData.swift in Sources */,
 				C77781AB2CA6A48000C80D07 /* MoviesDataServiceImpl.swift in Sources */,
 				C73FF8312C9F97B500140E38 /* SwiftUIMovieDBApp.swift in Sources */,
@@ -490,11 +606,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftUIMovieDB/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TMDB;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -519,11 +637,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftUIMovieDB/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TMDB;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,6 +679,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C7CB0E572CC3503100CD24A7 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C7CB0E582CC3503100CD24A7 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7CB0E572CC3503100CD24A7 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C73FF8252C9F97B500140E38 /* Project object */;
 }

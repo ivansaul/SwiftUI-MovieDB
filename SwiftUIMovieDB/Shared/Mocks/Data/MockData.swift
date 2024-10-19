@@ -11,11 +11,14 @@ import Foundation
 
 enum MockData {
     case popularMovies
+    case accountDetails
 
     var data: Data {
         switch self {
         case .popularMovies:
             return loadJson("Popular_Movies")
+        case .accountDetails:
+            return loadJson("Account_Details")
         }
     }
 }

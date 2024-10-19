@@ -9,9 +9,19 @@ import SwiftUI
 
 @main
 struct SwiftUIMovieDBApp: App {
+    @State private var authViewModel: AuthViewModel = .init(
+        authService: AuthService()
+    )
+
+    @State private var moviesViewModel: MoviesViewModel = .init(
+        dataService: MoviesDataServiceImpl()
+    )
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(authViewModel)
+                .environment(moviesViewModel)
         }
     }
 }

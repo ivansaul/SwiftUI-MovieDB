@@ -9,6 +9,20 @@
 
 import Foundation
 
+enum AuthError: Error, LocalizedError {
+    case denied
+    case canceled
+
+    var errorDescription: String {
+        switch self {
+        case .denied:
+            return "Your access has been denied. Please try again."
+        case .canceled:
+            return "The authentication process was canceled. Please try again."
+        }
+    }
+}
+
 enum NetworkingError: Error, LocalizedError {
     case badURL
     case badResponse

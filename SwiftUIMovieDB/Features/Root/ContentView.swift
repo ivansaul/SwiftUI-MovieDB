@@ -9,16 +9,25 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var moviesViewModel = MoviesViewModel(
-        dataService: MoviesDataServiceImpl()
-    )
-
+    @Environment(AuthViewModel.self) private var authViewModel
     var body: some View {
-        HomeView()
-            .environment(moviesViewModel)
+        NavigationStack {
+            Group {
+                switch authViewModel.authStatus {
+                case .checking:
+                    ProgressView()
+                case .loggedIn:
+                    HomeView()
+                case .loggedOut:
+                    LoginView()
+                }
+            }
+        }
     }
 }
 
 #Preview {
     ContentView()
+        .environment(AuthViewModel(authService: MockAuthService()))
+        .environment(MoviesViewModel(dataService: MockMoviesDataService()))
 }
