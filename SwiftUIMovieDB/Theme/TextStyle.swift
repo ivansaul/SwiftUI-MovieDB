@@ -45,16 +45,16 @@ extension Font {
 
 enum TypographyStyle {
     // HEADING
-    case h1(color: Color = .theme.textWhite, weight: TypographyWeight = .regular)
-    case h2(color: Color = .theme.textWhite, weight: TypographyWeight = .regular)
-    case h3(color: Color = .theme.textWhite, weight: TypographyWeight = .regular)
-    case h4(color: Color = .theme.textWhite, weight: TypographyWeight = .regular)
-    case h5(color: Color = .theme.textWhite, weight: TypographyWeight = .regular)
-    case h6(color: Color = .theme.textWhite, weight: TypographyWeight = .regular)
-    case h7(color: Color = .theme.textWhite, weight: TypographyWeight = .regular)
+    case h1(color: Color = .theme.text.white, weight: TypographyWeight = .regular)
+    case h2(color: Color = .theme.text.white, weight: TypographyWeight = .regular)
+    case h3(color: Color = .theme.text.white, weight: TypographyWeight = .regular)
+    case h4(color: Color = .theme.text.white, weight: TypographyWeight = .regular)
+    case h5(color: Color = .theme.text.white, weight: TypographyWeight = .regular)
+    case h6(color: Color = .theme.text.white, weight: TypographyWeight = .regular)
+    case h7(color: Color = .theme.text.white, weight: TypographyWeight = .regular)
 
     // PARAGRAPH
-    case body(color: Color = .theme.textWhite, weight: TypographyWeight = .regular)
+    case body(color: Color = .theme.text.white, weight: TypographyWeight = .regular)
 
     var size: CGFloat {
         switch self {
@@ -92,7 +92,7 @@ extension View {
     /// ```swift
     /// Text("Hello World!")
     ///     .textStyle(.h5(color: .theme.textWhite, weight: .regular))
-    /// 
+    ///
     /// Text("Hello World!")
     ///     .textStyle(.body(color: .theme.textWhite, weight: .semibold))
     /// ```

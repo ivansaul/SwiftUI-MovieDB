@@ -15,7 +15,7 @@ struct LoginView: View {
         @Bindable var authViewModel = authViewModel
         ZStack {
             // Background Color
-            Color.theme.primaryDark
+            Color.theme.primary.dark
                 .ignoresSafeArea()
 
             // Content
@@ -46,19 +46,19 @@ extension LoginView {
             Text("Sign in or create a FREE account")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-                .foregroundStyle(Color.theme.textGrey)
+                .foregroundStyle(Color.theme.text.grey)
 
             Text("Join now to subscribe to your favorite shows, like episodes, follow friends, create custom playlists, and discover so much more!")
-                .textStyle(.h5(color: .theme.textDarkGrey, weight: .semibold))
+                .textStyle(.h5(color: .theme.text.darkGrey, weight: .semibold))
                 .padding(.bottom, 20)
 
             Button(action: {
                 Task { await authViewModel.signIn() }
             }, label: {
                 Text("Sign in with TMDM")
-                    .textStyle(.h4(color: .theme.textWhite, weight: .semibold))
+                    .textStyle(.h4(color: .theme.text.white, weight: .semibold))
                     .padding()
-                    .background(Color.theme.primaryBlueAccent)
+                    .background(Color.theme.primary.blueAccent)
                     .clipShape(RoundedRectangle(cornerRadius: 15))
             })
             .disabled(authViewModel.isLoading ? true : false)

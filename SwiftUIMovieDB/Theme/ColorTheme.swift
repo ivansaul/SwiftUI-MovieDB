@@ -17,21 +17,28 @@ extension Color {
 }
 
 struct ColorTheme {
-    // PRIMARY COLORS
-    let primaryBlueAccent = Color("PrimaryColorBlueAccent")
-    let primaryDark = Color("PrimaryColorDark")
-    let primarySoft = Color("PrimaryColorSoft")
+    let primary = PrimaryColors()
+    let secondary = SecondaryColors()
+    let text = TextColors()
 
-    // SECONDARY COLORS
-    let secondaryGreen = Color("secondaryColorGreen")
-    let secondaryOrange = Color("secondaryColorOrange")
-    let secondaryRed = Color("secondaryColorRed")
+    struct PrimaryColors {
+        let blueAccent = Color("PrimaryColorBlueAccent")
+        let dark = Color("PrimaryColorDark")
+        let soft = Color("PrimaryColorSoft")
+    }
 
-    // TEXT COLORS
-    let textBlack = Color("TextColorBlack")
-    let textDarkGrey = Color("TextColorDarkGrey")
-    let textGrey = Color("TextColorGrey")
-    let textLineDark = Color("TextColorLineDark")
-    let textWhite = Color("TextColorWhite")
-    let textWhiteGrey = Color("TextColorWhiteGrey")
+    struct SecondaryColors {
+        let green = Color("SecondaryColorGreen")
+        let orange = Color("SecondaryColorOrange")
+        let red = Color("SecondaryColorRed")
+    }
+
+    struct TextColors {
+        let black = Color("TextColorBlack")
+        let darkGrey = Color("TextColorDarkGrey")
+        let grey = Color("TextColorGrey")
+        let lineDark = Color("TextColorLineDark")
+        let white = Color("TextColorWhite")
+        let whiteGrey = Color("TextColorWhiteGrey")
+    }
 }
