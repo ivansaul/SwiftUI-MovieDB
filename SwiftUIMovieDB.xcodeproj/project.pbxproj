@@ -112,8 +112,9 @@
 		C72766F42CA7AA8100A9D874 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				C72766F62CA7B6DD00A9D874 /* Mocks */,
 				C72766F52CA7AB1700A9D874 /* Helpers */,
+				C72766F62CA7B6DD00A9D874 /* Mocks */,
+				C73FF8402C9F9DAF00140E38 /* Theme */,
 				C716F3B52CA142F300B0767D /* Utilities */,
 			);
 			path = Shared;
@@ -169,8 +170,6 @@
 			children = (
 				C716F3C12CA1470D00B0767D /* App */,
 				C73FF84E2C9FC3EA00140E38 /* Features */,
-				C73FF8482C9F9FD200140E38 /* Fonts */,
-				C73FF8402C9F9DAF00140E38 /* Theming */,
 				C72766F42CA7AA8100A9D874 /* Shared */,
 				C73FF8362C9F97B600140E38 /* Preview Content */,
 				C73FF84C2C9FA27800140E38 /* Assets.xcassets */,
@@ -188,13 +187,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		C73FF8402C9F9DAF00140E38 /* Theming */ = {
+		C73FF8402C9F9DAF00140E38 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				C73FF8482C9F9FD200140E38 /* Fonts */,
 				C73FF8432C9F9EAA00140E38 /* ColorTheme.swift */,
 				C73FF8452C9F9EC600140E38 /* TextStyle.swift */,
 			);
-			path = Theming;
+			name = Theme;
+			path = ../Theme;
 			sourceTree = "<group>";
 		};
 		C73FF8482C9F9FD200140E38 /* Fonts */ = {
