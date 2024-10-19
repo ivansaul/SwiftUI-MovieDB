@@ -22,3 +22,10 @@ extension Movie {
         [Movie].preview.first!
     }
 }
+
+extension User {
+    static var preview: User {
+        let data = MockData.accountDetails.data
+        return try! JSONDecoder().decode(User.self, from: data)
+    }
+}
