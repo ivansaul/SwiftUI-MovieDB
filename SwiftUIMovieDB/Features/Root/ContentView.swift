@@ -9,14 +9,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var moviesViewModel = MoviesViewModel(
+        dataService: MoviesDataServiceImpl()
+    )
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        HomeView()
+            .environment(moviesViewModel)
     }
 }
 
