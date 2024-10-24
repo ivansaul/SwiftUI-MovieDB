@@ -9,7 +9,7 @@
 
 import Foundation
 
-class MockMoviesDataService: MoviesDataService {
+class MockMoviesDataService: MoviesDataServiceProtocol {
     func fetchMovies() async throws -> [Movie] {
         [Movie].preview
     }

@@ -28,6 +28,7 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .environment(AuthViewModel(authService: MockAuthService()))
-        .environment(MoviesViewModel(dataService: MockMoviesDataService()))
+        .environment(AuthViewModel.preview)
+        .environment(MoviesViewModel.preview)
+        .environment(AccountViewModel.preview)
 }

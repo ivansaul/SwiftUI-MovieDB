@@ -15,7 +15,6 @@ class AuthViewModel {
     private(set) var authStatus: AuthStatus = .checking
     private(set) var errorMessage: String = ""
     var showAlert: Bool = false
-    private(set) var currentUser: User?
 
     @ObservationIgnored
     private let authService: AuthServiceProtocol
@@ -52,22 +51,7 @@ class AuthViewModel {
 
         try? await authService.signOut()
 
-        currentUser = nil
         authStatus = .loggedOut
-    }
-
-    @MainActor
-    func fetchAccountDetails() async {
-        guard !isLoading else { return }
-        defer { isLoading = false }
-
-        isLoading = true
-
-        do {
-            currentUser = try await authService.fetchAccountDetails()
-        } catch {
-            loadError(error)
-        }
     }
 }
 

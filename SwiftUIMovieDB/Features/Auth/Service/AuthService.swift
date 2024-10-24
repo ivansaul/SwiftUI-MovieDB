@@ -20,16 +20,6 @@ class AuthService: NSObject, HTTPNetworking, AuthServiceProtocol {
         keychainManager.set(sessionID, forKey: APIConstants.Keys.sessionID)
     }
 
-    func fetchAccountDetails() async throws -> User? {
-        guard let sessionID = keychainManager.get(key: APIConstants.Keys.sessionID) else {
-            return nil
-        }
-        let resource = AccountDetailsResource(sessionID: sessionID)
-        let request = try resource.urlRequest()
-        let data = try await fetchData(for: request)
-        return try decodeData(as: User.self, data: data)
-    }
-
     func signOut() async throws {
         keychainManager.delete(APIConstants.Keys.sessionID)
     }

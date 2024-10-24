@@ -30,13 +30,6 @@ class MockAuthService: AuthServiceProtocol {
         keychainManager.set("MocksessionID", forKey: keySessionID)
     }
 
-    func fetchAccountDetails() async throws -> User? {
-        guard keychainManager.get(key: keySessionID) != nil else {
-            throw NetworkingError.badResponse
-        }
-        return User.preview
-    }
-
     func signOut() async throws {
         signOutCalled = true
         keychainManager.delete(keySessionID)

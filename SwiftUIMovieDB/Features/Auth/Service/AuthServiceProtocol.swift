@@ -11,7 +11,6 @@ import Foundation
 
 protocol AuthServiceProtocol {
     func signInWithTMDB() async throws
-    func fetchAccountDetails() async throws -> User?
     func signOut() async throws
     func authStatus() async -> AuthStatus
 }

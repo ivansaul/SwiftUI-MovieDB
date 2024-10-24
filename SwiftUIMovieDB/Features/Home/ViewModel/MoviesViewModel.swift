@@ -15,10 +15,10 @@ class MoviesViewModel {
     private(set) var errorMessage: String = ""
     private(set) var isLoading: Bool = false
 
-    private let dataService: MoviesDataService
+    private let moviesDataService: MoviesDataServiceProtocol
 
-    init(dataService: MoviesDataService) {
-        self.dataService = dataService
+    init(moviesDataService: MoviesDataServiceProtocol) {
+        self.moviesDataService = moviesDataService
     }
 
     @MainActor
@@ -28,7 +28,7 @@ class MoviesViewModel {
 
         isLoading = true
         do {
-            movies = try await dataService.fetchMovies()
+            movies = try await moviesDataService.fetchMovies()
         } catch {
             errorMessage = error.localizedDescription
         }

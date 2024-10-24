@@ -11,9 +11,10 @@ import SwiftUI
 
 struct ProfileView: View {
     @Environment(AuthViewModel.self) private var authViewModel: AuthViewModel
+    @Environment(AccountViewModel.self) private var accountViewModel: AccountViewModel
     var body: some View {
         VStack(spacing: 30.0) {
-            if let avatar = authViewModel.currentUser?.avatarURL {
+            if let avatar = accountViewModel.currentUser?.avatarURL {
                 AsyncImage(url: avatar) { image in
                     image
                         .resizable()
@@ -26,7 +27,7 @@ struct ProfileView: View {
                 loadingProfileImageView
             }
 
-            if let username = authViewModel.currentUser?.username {
+            if let username = accountViewModel.currentUser?.username {
                 Text(username)
                     .font(.subheadline)
                     .fontWeight(.semibold)
@@ -52,7 +53,7 @@ struct ProfileView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button(action: {
-                    Task { await authViewModel.fetchAccountDetails() }
+                    Task { await accountViewModel.fetchAccountDetails() }
                 }, label: {
                     Image(systemName: "arrow.clockwise")
                 })
@@ -66,14 +67,15 @@ struct ProfileView: View {
                 EmptyView()
             }
         }
-        .task { await authViewModel.fetchAccountDetails() }
+        .task { await accountViewModel.fetchAccountDetails() }
     }
 }
 
 #Preview {
     NavigationStack {
         ProfileView()
-            .environment(AuthViewModel(authService: MockAuthService()))
+            .environment(AuthViewModel.preview)
+            .environment(AccountViewModel.preview)
     }
 }
 

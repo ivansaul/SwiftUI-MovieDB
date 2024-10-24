@@ -14,7 +14,11 @@ struct SwiftUIMovieDBApp: App {
     )
 
     @State private var moviesViewModel: MoviesViewModel = .init(
-        dataService: MoviesDataServiceImpl()
+        moviesDataService: MoviesDataService()
+    )
+
+    @State private var accountViewModel: AccountViewModel = .init(
+        accountDataService: AccountDataService()
     )
 
     var body: some Scene {
@@ -22,6 +26,7 @@ struct SwiftUIMovieDBApp: App {
             ContentView()
                 .environment(authViewModel)
                 .environment(moviesViewModel)
+                .environment(accountViewModel)
         }
     }
 }

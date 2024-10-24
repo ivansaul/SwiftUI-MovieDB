@@ -1,14 +1,20 @@
 //
-//  MoviesDataService.swift
+//  MoviesDataServiceImpl.swift
 //  SwiftUIMovieDB
 //
-//  Created by @ivansaul on 9/22/24.
+//  Created by @ivansaul on 9/27/24.
 //
 //  https://github.com/ivansaul
 //
 
 import Foundation
 
-protocol MoviesDataService {
-    func fetchMovies() async throws -> [Movie]
+class MoviesDataService: MoviesDataServiceProtocol, HTTPNetworking {
+    func fetchMovies() async throws -> [Movie] {
+        let resource = MoviesResource()
+        let request = try resource.urlRequest()
+        let data = try await fetchData(for: request)
+        let wrapper = try decodeData(as: WrapperMovies.self, data: data)
+        return wrapper.results
+    }
 }

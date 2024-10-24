@@ -32,7 +32,7 @@ struct LoginView: View {
 
 #Preview {
     LoginView()
-        .environment(AuthViewModel(authService: MockAuthService()))
+        .environment(AuthViewModel.preview)
 }
 
 extension LoginView {
