@@ -11,7 +11,10 @@ import Foundation
 
 @Observable
 class MoviesViewModel {
-    private(set) var movies: [Movie] = []
+    private(set) var nowPlayingMovies: [Movie] = []
+    private(set) var popularMovies: [Movie] = []
+    private(set) var topRatedMovies: [Movie] = []
+    private(set) var upcomingMovies: [Movie] = []
     private(set) var errorMessage: String = ""
     private(set) var isLoading: Bool = false
 
@@ -19,6 +22,9 @@ class MoviesViewModel {
 
     init(moviesDataService: MoviesDataServiceProtocol) {
         self.moviesDataService = moviesDataService
+
+        // Prepare placeholder data
+        setPlaceholderData()
     }
 
     @MainActor
@@ -28,9 +34,24 @@ class MoviesViewModel {
 
         isLoading = true
         do {
-            movies = try await moviesDataService.fetchMovies()
+            (nowPlayingMovies, popularMovies, topRatedMovies, upcomingMovies) = try await (
+                moviesDataService.fetchNowPlayingMovies(),
+                moviesDataService.fetchPopularMovies(),
+                moviesDataService.fetchTopRatedMovies(),
+                moviesDataService.fetchUpcomingMovies()
+            )
+
         } catch {
             errorMessage = error.localizedDescription
         }
+    }
+}
+
+extension MoviesViewModel {
+    private func setPlaceholderData() {
+        nowPlayingMovies = .preview
+        popularMovies = .preview
+        topRatedMovies = .preview
+        upcomingMovies = .preview
     }
 }

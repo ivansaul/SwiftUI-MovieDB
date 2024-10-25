@@ -20,6 +20,8 @@ enum APIConstants {
     enum MovieLists {
         static let nowPlaying = "/3/movie/now_playing"
         static let popular = "/3/movie/popular"
+        static let topRated = "/3/movie/top_rated"
+        static let upcoming = "/3/movie/upcoming"
     }
 
     enum Auth {

@@ -10,7 +10,19 @@
 import Foundation
 
 class MockMoviesDataService: MoviesDataServiceProtocol {
-    func fetchMovies() async throws -> [Movie] {
-        [Movie].preview
+    func fetchNowPlayingMovies() async throws -> [Movie] {
+        .preview
+    }
+
+    func fetchPopularMovies() async throws -> [Movie] {
+        .preview
+    }
+
+    func fetchTopRatedMovies() async throws -> [Movie] {
+        .preview
+    }
+
+    func fetchUpcomingMovies() async throws -> [Movie] {
+        .preview
     }
 }

@@ -10,5 +10,8 @@
 import Foundation
 
 protocol MoviesDataServiceProtocol {
-    func fetchMovies() async throws -> [Movie]
+    func fetchNowPlayingMovies() async throws -> [Movie]
+    func fetchPopularMovies() async throws -> [Movie]
+    func fetchTopRatedMovies() async throws -> [Movie]
+    func fetchUpcomingMovies() async throws -> [Movie]
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7049EF72CCB0A1B00C0338E /* HomeCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7049EF62CCB0A1B00C0338E /* HomeCarouselView.swift */; };
+		C7049EF92CCB168700C0338E /* MovieCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7049EF82CCB168700C0338E /* MovieCardView.swift */; };
+		C7049EFB2CCB175E00C0338E /* RateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7049EFA2CCB175E00C0338E /* RateView.swift */; };
+		C7049EFD2CCB180E00C0338E /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7049EFC2CCB180E00C0338E /* Double.swift */; };
 		C716F3B82CA143FA00B0767D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C716F3B72CA143FA00B0767D /* HTTPMethod.swift */; };
 		C716F3BA2CA144CF00B0767D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C716F3B92CA144CF00B0767D /* Errors.swift */; };
 		C716F3BE2CA1456900B0767D /* HTTPResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C716F3BD2CA1456900B0767D /* HTTPResource.swift */; };
@@ -56,9 +60,16 @@
 		C7CB0E642CC353DD00CD24A7 /* AccountDetailsResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CB0E632CC353DD00CD24A7 /* AccountDetailsResource.swift */; };
 		C7CBC1432CC3708C00DB9B24 /* AuthServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CBC1422CC3708C00DB9B24 /* AuthServiceProtocol.swift */; };
 		C7CD7C0F2CC31A6B00AD52D7 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CD7C0E2CC31A6B00AD52D7 /* env.swift */; };
+		C7D607E92CCC2DA800E4AAD7 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D607E82CCC2DA800E4AAD7 /* View.swift */; };
+		C7D607EB2CCC453F00E4AAD7 /* MoviesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D607EA2CCC453F00E4AAD7 /* MoviesListView.swift */; };
+		C7E65BF62CCB2A6B00AE3506 /* CategoriesFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E65BF52CCB2A6B00AE3506 /* CategoriesFilterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C7049EF62CCB0A1B00C0338E /* HomeCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCarouselView.swift; sourceTree = "<group>"; };
+		C7049EF82CCB168700C0338E /* MovieCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCardView.swift; sourceTree = "<group>"; };
+		C7049EFA2CCB175E00C0338E /* RateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateView.swift; sourceTree = "<group>"; };
+		C7049EFC2CCB180E00C0338E /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		C716F3B72CA143FA00B0767D /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		C716F3B92CA144CF00B0767D /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		C716F3BD2CA1456900B0767D /* HTTPResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResource.swift; sourceTree = "<group>"; };
@@ -109,6 +120,9 @@
 		C7CB0E632CC353DD00CD24A7 /* AccountDetailsResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsResource.swift; sourceTree = "<group>"; };
 		C7CBC1422CC3708C00DB9B24 /* AuthServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceProtocol.swift; sourceTree = "<group>"; };
 		C7CD7C0E2CC31A6B00AD52D7 /* env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env.swift; sourceTree = "<group>"; };
+		C7D607E82CCC2DA800E4AAD7 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		C7D607EA2CCC453F00E4AAD7 /* MoviesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListView.swift; sourceTree = "<group>"; };
+		C7E65BF52CCB2A6B00AE3506 /* CategoriesFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesFilterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				C71F0EFB2CCADA1F00D4ECB0 /* String.swift */,
+				C7049EFC2CCB180E00C0338E /* Double.swift */,
+				C7D607E82CCC2DA800E4AAD7 /* View.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -297,6 +313,8 @@
 			children = (
 				C73FF8512C9FC56E00140E38 /* HomeView.swift */,
 				C7A9D92C2CC40D3B001C07EC /* HomeHeaderView.swift */,
+				C7049EF62CCB0A1B00C0338E /* HomeCarouselView.swift */,
+				C7D607EA2CCC453F00E4AAD7 /* MoviesListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -313,9 +331,9 @@
 		C73FF85C2C9FDC5700140E38 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				C716F3C62CA148ED00B0767D /* MoviesResource.swift */,
-				C73FF85D2C9FDD4A00140E38 /* MoviesDataServiceProtocol.swift */,
 				C77781AA2CA6A48000C80D07 /* MoviesDataService.swift */,
+				C73FF85D2C9FDD4A00140E38 /* MoviesDataServiceProtocol.swift */,
+				C716F3C62CA148ED00B0767D /* MoviesResource.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -334,6 +352,9 @@
 				C737F8142CC75377003766A7 /* CarouselView.swift */,
 				C71F0EFD2CCAE73000D4ECB0 /* DotsIndicatorView.swift */,
 				C7AF4AF12CC832A000DFABA0 /* ImageView.swift */,
+				C7049EF82CCB168700C0338E /* MovieCardView.swift */,
+				C7049EFA2CCB175E00C0338E /* RateView.swift */,
+				C7E65BF52CCB2A6B00AE3506 /* CategoriesFilterView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -500,15 +521,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7049EF72CCB0A1B00C0338E /* HomeCarouselView.swift in Sources */,
 				C7AF4AF22CC832A000DFABA0 /* ImageView.swift in Sources */,
 				C73FF8592C9FCD2000140E38 /* Movie.swift in Sources */,
 				C71F0EFC2CCADA1F00D4ECB0 /* String.swift in Sources */,
 				C7CB0E642CC353DD00CD24A7 /* AccountDetailsResource.swift in Sources */,
 				C7CB0E4D2CC34E1000CD24A7 /* AuthService.swift in Sources */,
 				C7A9D9372CC42415001C07EC /* MockAccountDataService.swift in Sources */,
+				C7049EF92CCB168700C0338E /* MovieCardView.swift in Sources */,
 				C73FF8462C9F9EC600140E38 /* TextStyle.swift in Sources */,
 				C7CB0E532CC34F0C00CD24A7 /* AuthResources.swift in Sources */,
 				C77781A92CA6A37B00C80D07 /* MoviesViewModel.swift in Sources */,
+				C7049EFB2CCB175E00C0338E /* RateView.swift in Sources */,
 				C7A9D92D2CC40D3B001C07EC /* HomeHeaderView.swift in Sources */,
 				C7CB0E512CC34EA800CD24A7 /* AuthModels.swift in Sources */,
 				C737F8152CC75377003766A7 /* CarouselView.swift in Sources */,
@@ -529,8 +553,11 @@
 				C716F3C72CA148ED00B0767D /* MoviesResource.swift in Sources */,
 				C7CD7C0F2CC31A6B00AD52D7 /* env.swift in Sources */,
 				C77781A02CA6919000C80D07 /* HTTPNetworking.swift in Sources */,
+				C7D607E92CCC2DA800E4AAD7 /* View.swift in Sources */,
 				C7A9D9392CC43072001C07EC /* PreviewViewModels.swift in Sources */,
 				C7CB0E492CC34A3100CD24A7 /* LoginView.swift in Sources */,
+				C7049EFD2CCB180E00C0338E /* Double.swift in Sources */,
+				C7D607EB2CCC453F00E4AAD7 /* MoviesListView.swift in Sources */,
 				C716F3BA2CA144CF00B0767D /* Errors.swift in Sources */,
 				C72766F92CA7CF7500A9D874 /* MockMoviesDataService.swift in Sources */,
 				C7A9D9332CC414F1001C07EC /* AccountDataService.swift in Sources */,
@@ -541,6 +568,7 @@
 				C7BE9A142CA66A9E00584061 /* MockData.swift in Sources */,
 				C77781AB2CA6A48000C80D07 /* MoviesDataService.swift in Sources */,
 				C7A9D9352CC41546001C07EC /* AccountDataServiceProtocol.swift in Sources */,
+				C7E65BF62CCB2A6B00AE3506 /* CategoriesFilterView.swift in Sources */,
 				C73FF8312C9F97B500140E38 /* SwiftUIMovieDBApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
