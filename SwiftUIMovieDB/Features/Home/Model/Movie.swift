@@ -27,12 +27,12 @@ struct Movie: Identifiable, Decodable {
 
     var backdropUrl: String? {
         guard let backdropPath = backdropPath else { return nil }
-        return "https://image.tmdb.org/t/p/w500/" + backdropPath
+        return "https://image.tmdb.org/t/p/w500" + backdropPath
     }
 
     var posterUrl: String? {
         guard let posterPath = posterPath else { return nil }
-        return "https://image.tmdb.org/t/p/w500/" + posterPath
+        return "https://image.tmdb.org/t/p/w500" + posterPath
     }
 
     enum CodingKeys: String, CodingKey {
