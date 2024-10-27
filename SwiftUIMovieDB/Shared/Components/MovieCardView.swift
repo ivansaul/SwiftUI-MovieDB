@@ -14,7 +14,7 @@ struct MovieCardView: View {
 
     var body: some View {
         VStack {
-            ImageView(url: movie.posterUrl)
+            CachedImageView(url: movie.posterUrl)
                 .frame(maxWidth: .infinity)
                 .frame(height: 178)
 

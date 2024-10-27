@@ -114,7 +114,7 @@ struct CarouselDemoView: View {
     var body: some View {
         VStack {
             CarouselView(items: items, spacing: spacing, sidesScaling: sidesScaling, itemInset: itemInset, autoplay: autoplay, duration: duration, selectedIndex: $selectedIndex) { movie in
-                ImageView(url: movie.posterUrl)
+                CachedImageView(url: movie.posterUrl)
                     .clipShape(RoundedRectangle(cornerRadius: 25.0))
             }
             .frame(height: 400)

@@ -44,7 +44,7 @@ struct HomeView: View {
 
 extension HomeView {
     private var header: some View {
-        let redact = accountViewModel.currentUser == nil
+        let redact = accountViewModel.isLoading
         let user: User = accountViewModel.currentUser ?? .preview
         return HomeHeaderView(user: user)
             .redacted(when: redact)

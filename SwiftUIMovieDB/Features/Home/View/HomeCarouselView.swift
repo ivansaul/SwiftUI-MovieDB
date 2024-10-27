@@ -16,7 +16,7 @@ struct HomeCarouselView: View {
         VStack(spacing: 15.0) {
             CarouselView(items: movies, autoplay: true, selectedIndex: $selectedIndex) { movie in
                 ZStack(alignment: .bottom) {
-                    ImageView(url: movie.backdropUrl, debug: false)
+                    CachedImageView(url: movie.backdropUrl)
                     VStack(alignment: .leading, spacing: 5) {
                         Text(movie.title)
                             .textStyle(.h3(color: .theme.text.white, weight: .semibold))

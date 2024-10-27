@@ -13,13 +13,9 @@ struct HomeHeaderView: View {
     let user: User
     var body: some View {
         HStack {
-            AsyncImage(url: user.avatarURL) { image in
-                image.resizable().scaledToFit()
-            } placeholder: {
-                ProgressView()
-            }
-            .frame(width: 40, height: 40)
-            .clipShape(RoundedRectangle(cornerRadius: 10))
+            CachedImageView(url: user.avatarURL?.absoluteString)
+                .frame(width: 40, height: 40)
+                .clipShape(RoundedRectangle(cornerRadius: 10))
             VStack(alignment: .leading) {
                 Text("Hello, \(user.username)")
                     .textStyle(.h4(color: .theme.text.white, weight: .semibold))
