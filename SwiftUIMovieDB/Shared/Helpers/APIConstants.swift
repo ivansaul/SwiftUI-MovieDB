@@ -24,6 +24,10 @@ enum APIConstants {
         static let upcoming = "/3/movie/upcoming"
     }
 
+    enum Genres {
+        static let movieList = "/3/genre/movie/list"
+    }
+
     enum Auth {
         static let authenticate = "/authenticate"
         static let requestToken = "/3/authentication/token/new"

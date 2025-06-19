@@ -10,27 +10,26 @@
 import SwiftUI
 
 struct CategoriesFilterView: View {
-    @State private var currentIndex: Int = 0
+    let items: [Genre]
 
+    @Binding var selectedItem: Genre
     @Namespace private var namespace
-
-    let categories: [String]
 
     var body: some View {
         ScrollView(.horizontal) {
             HStack(spacing: 10) {
-                ForEach(categories.indices, id: \.self) { index in
+                ForEach(items) { item in
                     ZStack {
-                        if currentIndex == index {
+                        if selectedItem == item {
                             RoundedRectangle(cornerRadius: 8)
                                 .fill(Color.theme.primary.soft)
                                 .matchedGeometryEffect(id: "ID", in: namespace)
                         }
 
-                        Text(categories[index])
+                        Text(item.name)
                             .textStyle(
                                 .h5(
-                                    color: currentIndex == index ?
+                                    color: selectedItem == item ?
                                         .theme.primary.blueAccent :
                                         .theme.text.white,
                                     weight: .medium
@@ -41,7 +40,7 @@ struct CategoriesFilterView: View {
                     .frame(height: 40)
                     .onTapGesture {
                         withAnimation(.spring()) {
-                            currentIndex = index
+                            selectedItem = item
                         }
                     }
                 }
@@ -52,7 +51,7 @@ struct CategoriesFilterView: View {
 }
 
 #Preview {
-    CategoriesFilterView(categories: .previewCategories)
+    CategoriesFilterView(items: .preview, selectedItem: .constant(.all))
 }
 
 extension [String] {

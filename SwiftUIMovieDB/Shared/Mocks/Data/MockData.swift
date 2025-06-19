@@ -12,6 +12,7 @@ import Foundation
 enum MockData {
     case popularMovies
     case accountDetails
+    case genresMovie
 
     var data: Data {
         switch self {
@@ -19,6 +20,8 @@ enum MockData {
             return loadJson("Popular_Movies")
         case .accountDetails:
             return loadJson("Account_Details")
+        case .genresMovie:
+            return loadJson("Genres_Movie")
         }
     }
 }

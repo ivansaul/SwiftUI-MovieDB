@@ -1,5 +1,5 @@
 //
-//  WrapperResults.swift
+//  Wrappers.swift
 //  SwiftUIMovieDB
 //
 //  Created by @ivansaul on 9/23/24.
@@ -13,9 +13,8 @@ struct WrapperResults<T: Decodable>: Decodable {
     let results: [T]
 }
 
-struct WrapperGenres<T: Decodable>: Decodable {
-    let genres: [T]
+struct WrapperGenres: Decodable {
+    let genres: [Genre]
 }
-
 
 typealias WrapperMovies = WrapperResults<Movie>

@@ -14,6 +14,7 @@ struct HomeView: View {
     @Environment(AccountViewModel.self) private var accountViewModel
 
     @State private var selectedIndex: Int = 1
+    @State private var selectedGenre: Genre = .all
 
     var body: some View {
         ScrollView {
@@ -23,9 +24,17 @@ struct HomeView: View {
 
                 carousel
 
-                CategoriesFilterView(categories: .previewCategories)
+                CategoriesFilterView(items: moviesViewModel.genresMovie, selectedItem: $selectedGenre)
+                    .task { await moviesViewModel.fetchGenresMovie() }
 
-                moviesListGroup
+                if selectedGenre == .all {
+                    moviesListGroup
+                        .transition(.blurReplace())
+                } else {
+                    Text(selectedGenre.name)
+                        .font(.title)
+                        .fontWeight(.bold)
+                }
             }
         }
         .frame(maxWidth: .infinity)

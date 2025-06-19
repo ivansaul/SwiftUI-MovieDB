@@ -15,6 +15,8 @@ class MoviesViewModel {
     private(set) var popularMovies: [Movie] = []
     private(set) var topRatedMovies: [Movie] = []
     private(set) var upcomingMovies: [Movie] = []
+    private(set) var genresMovie: [Genre] = [.all]
+    private(set) var selectedGenre: Genre = .all
     private(set) var errorMessage: String = ""
     private(set) var isLoading: Bool = false
 
@@ -40,6 +42,21 @@ class MoviesViewModel {
                 moviesDataService.fetchTopRatedMovies(),
                 moviesDataService.fetchUpcomingMovies()
             )
+
+        } catch {
+            errorMessage = error.localizedDescription
+        }
+    }
+
+    @MainActor
+    func fetchGenresMovie() async {
+//        guard !isLoading else { return }
+        defer { isLoading = false }
+
+        isLoading = true
+        do {
+            print("DEBUG: genres ...")
+            genresMovie += .preview
 
         } catch {
             errorMessage = error.localizedDescription

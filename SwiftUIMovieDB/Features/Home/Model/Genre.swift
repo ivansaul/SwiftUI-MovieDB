@@ -8,3 +8,14 @@
 //
 
 import Foundation
+
+struct Genre: Identifiable, Codable, Equatable {
+    let id: Int
+    let name: String
+}
+
+extension Genre {
+    static var all: Self {
+        Genre(id: 0, name: "All")
+    }
+}

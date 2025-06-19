@@ -29,3 +29,11 @@ extension User {
         return try! JSONDecoder().decode(User.self, from: data)
     }
 }
+
+extension [Genre] {
+    static var preview: Self {
+        let data = MockData.genresMovie.data
+        let wrapper = try! JSONDecoder().decode(WrapperGenres.self, from: data)
+        return wrapper.genres
+    }
+}
