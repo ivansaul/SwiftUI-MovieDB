@@ -13,4 +13,9 @@ struct WrapperResults<T: Decodable>: Decodable {
     let results: [T]
 }
 
+struct WrapperGenres<T: Decodable>: Decodable {
+    let genres: [T]
+}
+
+
 typealias WrapperMovies = WrapperResults<Movie>
